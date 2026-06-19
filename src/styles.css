@@ -727,6 +727,19 @@ a {
   object-position: center top;
 }
 
+.event-card--wedding .event-card__media img {
+  transform: scale(1.04);
+}
+
+.event-card--wedding:hover .event-card__media img,
+.event-card--wedding:focus-within .event-card__media img {
+  transform: scale(1.065);
+}
+
+.event-card--vratham .event-card__media img {
+  transform: scale(1.06);
+}
+
 .event-card__media::after {
   position: absolute;
   inset: 0;
@@ -1752,6 +1765,14 @@ footer p {
 }
 
 @media (max-width: 980px) {
+  .rsvp-section {
+    grid-template-columns: 1fr;
+  }
+
+  .rsvp-intro {
+    position: static;
+  }
+
   .admin-header {
     align-items: flex-start;
     flex-direction: column;
